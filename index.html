@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Blocker Lists</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="gradient-bg"></div> <!-- Animated Background -->
+
+<div class="container">
+    <nav>
+        <h1 class="logo"><i class="fa-solid fa-shield-halved"></i> AdBlock Hub</h1>
+        <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+    </nav>
+
+    <header>
+        <h2><i class="fa-solid fa-bolt"></i> Boost Your Browsing Experience</h2>
+        <p>Choose from our advanced ad-blocking lists to remove ads, trackers, and intrusive content.</p>
+    </header>
+
+    <section class="card-container">
+        <div class="card">
+            <h3><i class="fa-solid fa-ban"></i> Ads & Trackers</h3>
+            <p>Blocks ads, trackers, and analytics for a smooth experience.</p>
+            <button onclick="confirmDownload('Ads-Trackers-Analytics.txt')"><i class="fa-solid fa-download"></i> Download</button>
+        </div>
+        <div class="card">
+            <h3><i class="fa-solid fa-image"></i> Images & Videos</h3>
+            <p>Blocks auto-playing videos and unwanted images.</p>
+            <button onclick="confirmDownload('imagesvideos.txt')"><i class="fa-solid fa-download"></i> Download</button>
+        </div>
+        <div class="card">
+            <h3><i class="fa-solid fa-shield"></i> Ultra AdBlock</h3>
+            <p>Advanced filtering for ultimate ad-free browsing.</p>
+            <button onclick="confirmDownload('ultra-advanced-adblock.txt')"><i class="fa-solid fa-download"></i> Download</button>
+        </div>
+        <div class="card">
+            <h3><i class="fa-solid fa-volume-xmark"></i> Stop Video & Audio</h3>
+            <p>Prevents audio and video from auto-playing.</p>
+            <button onclick="confirmDownload('video-audio-stop.txt')"><i class="fa-solid fa-download"></i> Download</button>
+        </div>
+    </section>
+
+    <footer>
+        <p><i class="fa-solid fa-copyright"></i> 2025 AdBlock Hub | Designed for a Better Web</p>
+    </footer>
+</div>
+
+<!-- Confirmation Modal -->
+<div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+        <p><i class="fa-solid fa-circle-question"></i> Do you want to download this file?</p>
+        <button id="confirm-btn"><i class="fa-solid fa-check"></i> Yes</button>
+        <button id="cancel-btn"><i class="fa-solid fa-xmark"></i> Cancel</button>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
